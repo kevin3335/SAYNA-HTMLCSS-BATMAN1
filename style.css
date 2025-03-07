@@ -1,0 +1,8 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    background-image: url(Illustrations/Bathome1.png);
+    display: flex;
+}
