@@ -1,8 +1,21 @@
 body{
     padding: 0px;
     margin: 0px;
-    background-color: red;
+    background-color: #0D0E09;
 }
+
 nav li{
     list-style-type: none;
+}
+
+footer nav ul{
+    display: flex;
+}
+
+.color{
+    background-image: url("Illustrations/Bathome1.png");
+}
+
+p h1 h2 strong em a figcaption{
+    color: #FFF;
 }
