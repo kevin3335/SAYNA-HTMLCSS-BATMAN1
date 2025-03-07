@@ -1,8 +1,9 @@
 body{
     padding: 0px;
     margin: 0px;
+    background-image: url(Illustrations/Bathome1.png);
 }
 header{
-    background-image: url(Illustrations/Bathome1.png);
+
     display: flex;
 }
