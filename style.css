@@ -2,6 +2,7 @@ body{
     padding: 0px;
     margin: 0px;
     background-color: #ccf331;
+    text-decoration-color: #FFF;
 }
 
 nav li{
@@ -14,8 +15,4 @@ footer nav ul{
 
 .color{
     background-image: url("Illustrations/Bathome1.png");
-}
-
-p h1 h2 strong em a figcaption{
-    color: #FFF;
 }
