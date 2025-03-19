@@ -1,20 +1,108 @@
-body{
+/* Le style générale de la page HOME */
+html {
+    font-size: 1.3em;
+    color: white;
+    background-color: black;
+}
+* {
     padding: 0px;
     margin: 0px;
-    background-color: #000000;
 }
-
-nav li{
+li {
     list-style-type: none;
 }
 
-footer nav ul{
+/* L'en-tète de la page */
+header{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul { 
+    display: flex;
+    gap: 20px;
 }
 
-.color{
-    background-image: url("Illustrations/Bathome1.png");
+/* Le pied de page de la page */
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
 }
-* {
-    color: rgb(255, 255, 255); /* Remplacez "red" par la couleur de votre choix */
-  }
+blockquote {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    width: 1100px;
+}
+blockquote div:first-child {
+    align-self: flex-start;
+    margin-right: 20px;
+}
+blockquote div:last-child {
+    align-self: flex-end;
+    margin-left: 20px;
+}
+blockquote p {
+    text-align: center;
+}
+.cote {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 20px;
+}
+.cote p {
+    font-size: 12px;
+}
+footer nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Le corps de la page */
+/* La deuxième section */
+.section2 {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 80px;
+    align-items: center;
+}
+.section2 article {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 50px;
+}
+.section2 .sec2div {
+    display: flex;
+    gap: 90px;
+
+}
+
+/* La troisième section */
+.section3 {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 80px;
+    align-items: center;
+}
+.sec3div {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.section3 .sec3div article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.section3 article .mini {
+    font-size: 15px;
+    padding: 20px;
+    max-width: 400px;
+}
