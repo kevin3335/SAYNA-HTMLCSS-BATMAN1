@@ -11,12 +11,34 @@ html {
 li {
     list-style-type: none;
 }
+body {
+    width: max-content;
+}
+@font-face {
+    font-family: "rajdhani";
+    src: url("fonts/rajdhani/rajdhani-medium.ttf");
+}
+@font-face {
+    font-family: "groteskb";
+    src: url("fonts/space_grotesk/SpaceGrotesk-Bold.otf");
+}
+@font-face {
+    font-family: "groteskr";
+    src: url("fonts/space_grotesk/SpaceGrotesk-Regular.otf");
+}
 
 /* L'en-tète de la page */
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 3px solid  #BCBBBD;
+    border-right: 3px solid  #BCBBBD;
+    border-left: 3px solid  #BCBBBD;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 50px;
+    padding-bottom: 80px;
 }
 header nav ul { 
     display: flex;
@@ -66,6 +88,56 @@ footer nav ul {
 }
 
 /* Le corps de la page */
+.color {
+    background: url("Illustrations/Bathome1.png") scroll no-repeat;
+}
+.mainimg {
+    max-width: 74px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* La première section partageant le mème background-image */
+.sec1div1 {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+    margin: 150px;
+    font-size: 1.06em;
+}
+.bold {
+    font-weight: 900;
+    margin-top: 30px;
+    font-size: 1.1em;
+}
+.sec1div3 {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+    margin: 20px;
+    margin-bottom: 250px;
+}
+.sec1div3 button {
+    min-width: 240px;
+    min-height: 60px;
+    font-size: 0.8em;
+    color: white;
+    background: linear-gradient(90deg, #eddebf83 , #890009a2 );
+    border: none;
+}
+.sec1div4 nav ul {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+}
+
 /* La deuxième section */
 .section2 {
     display: flex;
@@ -81,7 +153,16 @@ footer nav ul {
 .section2 .sec2div {
     display: flex;
     gap: 90px;
-
+}
+/* Image au niveau du titre de la deuxième article */
+.article2 {
+    max-width: max-content;
+}
+.nemesis {
+    position: relative;
+    top: 100%;
+    left: 10%;
+    max-width: 150px;
 }
 
 /* La troisième section */

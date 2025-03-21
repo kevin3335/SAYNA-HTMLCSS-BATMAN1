@@ -25,22 +25,24 @@
                 </nav>
             </div>
         </header>
-        <!-- Première session partageant le mème image de fond avec l'en-tète -->
+        <!-- Première session partageant la mème image de fond avec l'en-tète -->
         <section class="section1">
             <div class="sec1div1">
-                <P>
-                    Au nom de ses parents assassinés, Bruce Wayne mène
-                    <br>une guerre éternelle contre les criminels de Gotham City.
-                    <br>Il est vengeur. Il est la nuit.
-                </p> 
-                <p>Il est Batman. </P>
+                <div>
+                    <P>
+                        Au nom de ses parents assassinés, Bruce Wayne mène
+                        <br>une guerre éternelle contre les criminels de Gotham City.
+                        <br>Il est vengeur. Il est la nuit.
+                    </p> 
+                    <p class="bold">Il est Batman. </P>
+                </div>
                 <!-- Les deux bouttons de la première section -->
-                <div class="sec1div2">
+                <div class="sec1div3">
                     <a href=""><button>VOIR LE HEROS</button></a>
                     <a href=""><button>LES ADVERSAIRES</button></a>
                 </div>
             </div>
-            <div>
+            <div class="sec1div4">
                 <!-- La navigation haut-bas et les icones des réseaux sociaux -->
                 <nav>
                     <ul>
@@ -55,7 +57,7 @@
         </section>
     </div>  <!-- pour l'image d'arrière plan commun -->
     <main>
-        <div class="sec2img1"><img src="Logos\flèche_down_header.png" alt="Une flèche pointée en bas"></div>
+        <div class="mainimg"><img src="Logos\flèche_down_header.png" alt="Une flèche pointée en bas"></div>
         <!-- La deuxième section regroupant tous les articles avec leurs illustrations -->
         <section class="section2">
             <!-- Le premier article de la section 2 -->
@@ -99,8 +101,10 @@
             <!-- Le deuxième article de la section 2 -->
             <article>
                 <div>
-                    <h2>NÉMÉSIS </h2>
-                    <img src="Illustrations\Bathome13.png" alt="L'insigne de BATMAN">
+                    <div class="article2">
+                        <img src="Illustrations\Bathome13.png" alt="L'insigne de BATMAN" class="nemesis">
+                        <h2>NÉMÉSIS </h2>
+                    </div>
                     <p>
                         Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart 
                         <br>du temps, des vilains sans capacités surnaturelles mais particulièrement violents ou 
@@ -139,7 +143,7 @@
                 <div>
                     <div>
                         <h2>Alliés</h2>
-                        <img src="Illustrations\Bathome12.png" alt="Batmane en action">
+                        <img src="Illustrations\Bathome12.png" alt="Batmane en action" class="allies">
                     </div>
                     <p>
                         Alfred est le majordome des Wayne. A leur mort il s’occupe de l’éducation du jeune Bruce 
@@ -187,9 +191,9 @@
                         <br>extraterrestres ou surnaturelles menacent son existence.
                     </p>
                 </div>
-                <!-- L'illustration de la quatrième article -->
-                <div class="sec2div"><img src="Illustrations\Bathome11.png" alt="Image des coéquipiers de BATMAN"></div>
             </article>
+            <!-- L'illustration de la quatrième article -->
+            <div class="sec2div"><img src="Illustrations\Bathome11.png" alt="Image des coéquipiers de BATMAN"></div>
         </section>
         <!-- Le troisième section de la page -->
         <section class="section3">
