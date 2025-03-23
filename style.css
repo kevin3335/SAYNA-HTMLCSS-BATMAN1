@@ -1,6 +1,20 @@
 /* Le style générale de la page HOME */
+@font-face {
+    font-family: "rajdhanim";
+    src: url("fonts/rajdhani/rajdhani-medium.ttf");
+}
+@font-face {
+    font-family: "groteskb";
+    src: url("fonts/space_grotesk/SpaceGrotesk-Bold.otf");
+}
+@font-face {
+    font-family: "groteskr";
+    src: url("fonts/space_grotesk/SpaceGrotesk-Regular.otf");
+}
 html {
-    font-size: 1.3em;
+   /* font-family: "groteskr", Verdana, Geneva, Tahoma, sans-serif; */
+   font-family: "rajdhanim", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.25em;
     color: white;
     background-color: black;
 }
@@ -14,17 +28,14 @@ li {
 body {
     width: max-content;
 }
-@font-face {
-    font-family: "rajdhani";
-    src: url("fonts/rajdhani/rajdhani-medium.ttf");
+h2 {
+    font-family: "rajdhanim", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8em;
+    margin-bottom: 40px;
 }
-@font-face {
-    font-family: "groteskb";
-    src: url("fonts/space_grotesk/SpaceGrotesk-Bold.otf");
-}
-@font-face {
-    font-family: "groteskr";
-    src: url("fonts/space_grotesk/SpaceGrotesk-Regular.otf");
+button {
+    font-family: "rajdhanim", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
 }
 
 /* L'en-tète de la page */
@@ -123,9 +134,8 @@ footer nav ul {
 .sec1div3 button {
     min-width: 240px;
     min-height: 60px;
-    font-size: 0.8em;
     color: white;
-    background: linear-gradient(90deg, #eddebf83 , #890009a2 );
+    background: linear-gradient(90deg, #eddebf71, #8900099d );
     border: none;
 }
 .sec1div4 nav ul {
@@ -153,16 +163,24 @@ footer nav ul {
 .section2 .sec2div {
     display: flex;
     gap: 90px;
+    text-align: center;
+}
+figcaption {
+    margin-top: 20px;
 }
 /* Image au niveau du titre de la deuxième article */
-.article2 {
-    max-width: max-content;
+.relatif {
+    width: max-content;
 }
 .nemesis {
     position: relative;
-    top: 100%;
-    left: 10%;
+    top: 2.4em;
+    left: 55%;
     max-width: 150px;
+}
+/* Image au niveau du titre de la troisième article */
+.allies {
+
 }
 
 /* La troisième section */
@@ -175,15 +193,45 @@ footer nav ul {
 .sec3div {
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 200px;
 }
+/* Le mini article */
 .section3 .sec3div article {
     display: flex;
     flex-direction: row;
     align-items: center;
+    background: linear-gradient(90deg, #eddebf5d, #19587d5b);
+    max-height: 230px;
+    border-radius: 0px 15px 15px 0px;
 }
 .section3 article .mini {
-    font-size: 15px;
-    padding: 20px;
-    max-width: 400px;
+    font-size: 0.6em;
+    padding: 15px;
+    max-width: 300px;
+    height: 230px;
+    max-height: 230px;
 }
+.section3 article .mini h4 {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.section3 article .mini strong {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.section3 article .mini em {
+    display: inline-block;
+    font-style: normal;
+    font-size: 13.5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.section3 article .mini em span {
+    color: yellow;
+}
+/* L' iframe */
