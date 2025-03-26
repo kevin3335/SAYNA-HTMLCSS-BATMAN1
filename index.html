@@ -139,7 +139,7 @@
                 </div>
             </article>
             <!-- Le troisième article de la deuxième section -->
-            <article>
+            <article class="test">
                 <div>
                     <div class="absolute">
                         <h2>Alliés</h2>
@@ -217,20 +217,48 @@
                 </article>
                 <div><img src="Logos\icon_flèche_2.png" alt="Button suivant"></div>
             </div>
-            <div>
-                <iframe
-                    width="1069" height="601" 
-                    src="https://www.youtube-nocookie.com/embed/jXrFsn9pcZY?si=Av-zOwxX_qWjJWtd" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" 
-                    allowfullscreen>
-                </iframe>
+            <div class="video-container">
+                <div class="thumbnail">
+                    <iframe
+                        width="1069" height="601" 
+                        src="https://www.youtube-nocookie.com/embed/jXrFsn9pcZY?si=Av-zOwxX_qWjJWtd" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
             </div>
         </section>
         <section class="section4">
-            <h2>PRENONS CONTACT </h2>
+            <div class="form-container">
+                <h2>PRENONS CONTACT</h2>
+                <form>
+                    <label for="email">ADRESSE EMAIL</label>
+                    <input type="email" id="email" name="email" placeholder="Adresse email" required>
+        
+                    <label for="newsletter">NEWSLETTER</label>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">En cochant cette case, vous acceptez de recevoir l'actualité de Batman.</label>
+                    </div>
+        
+                    <label for="frequency">Choisissez la fréquence :</label>
+                    <select id="frequency" name="frequency">
+                        <option value="weekly">Une fois par semaine</option>
+                        <option value="biweekly">Toutes les deux semaines</option>
+                        <option value="monthly">Une fois par mois</option>
+                        <option value="quarterly">Une fois tous les trois mois</option>
+                        <option value="semiannual">Une fois tous les six mois</option>
+                    </select>
+        
+                    <label for="message">MESSAGE</label>
+                    <textarea id="message" name="message" placeholder="Laissez un commentaire pour la communauté"></textarea>
+        
+                    <button type="submit">CONFIRMER</button>
+                </form>
+            </div>
         </section>
     </main>
     <!-- Le pied de page de ma page -->
