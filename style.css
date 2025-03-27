@@ -17,6 +17,7 @@ html {
     font-size: 1.25em;
     color: white;
     background-color: black;
+    scroll-behavior: smooth;
 }
 * {
     padding: 0px;
@@ -34,10 +35,6 @@ h2 {
     font-size: 1.8em;
     margin-bottom: 40px;
 }
-button {
-    font-family: "rajdhanim", Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1em;
-}
 
 /* L'en-tète de la page */ /*137*/
 header{
@@ -47,8 +44,8 @@ header{
     border-width: 0px 1px 3px 1px;
     border-style: solid;
     border-color: #bcbbbd3f;
-    padding: 60px 95.5px 100px 95.5px;
-    margin: 0px 95.5px 0px 95.5px;
+    padding: 60px 90px 100px 90px;
+    margin: 0px 94px 0px 94px;
 }
 header nav ul { 
     display: flex;
@@ -63,34 +60,53 @@ footer {
     gap: 40px;
     align-items: center;
     margin-bottom: 60px;
+    border-width: 0px 1px 0px 1px;
+    border-style: solid;
+    border-color: #bcbbbd3f;
+    margin: 0px 94px 0px 94px;
+    padding: 0px 0px 100px 0px;
 }
+/* La citation du pied de page */
 blockquote {
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
-    width: 1100px;
+    margin: 100px 0px 100px 0px;
+    max-width: 748px;
 }
 blockquote div:first-child {
     align-self: flex-start;
-    margin-right: 20px;
+    margin-right: 650px;
 }
 blockquote div:last-child {
     align-self: flex-end;
-    margin-left: 20px;
+    margin-left: 650px;
 }
+/* les paragraphes de la citations du pied de page */
 blockquote p {
     text-align: center;
 }
+.quote {
+    font-family: "groteskb", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+    line-height: 1.6em;
+}
+.quote2 {
+    font-family: "rajdhanim", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+    line-height: 1.6em;
+}
+/* Les autres parties du pied de page */
 .cote {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 .cote p {
-    font-size: 12px;
+    font-family: "groteskr", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.5em;
 }
 footer nav ul {
     display: flex;
@@ -101,18 +117,15 @@ footer nav ul {
 /* Le corps de la page */
 .color {
     background: url("Illustrations/Bathome1.png") scroll no-repeat;
-}
-main {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    gap: 80px;
+    background-size: contain;
 }
 .mainimg {
-    /*max-width: 74px;
+    max-width: 74px;
     margin: auto;
-    margin-top: 50px;
-     margin-bottom: 50px; A revoir parce que display joue son role*/
+    border-width: 0px 1px 0px 1px;
+    border-style: solid;
+    border-color: #bcbbbd3f;
+    padding: 0px 551px 40px 551px;
 }
 
 /* La première section partageant le mème background-image */
@@ -121,22 +134,25 @@ main {
     border-width: 0px 1px 0px 1px;
     border-style: solid;
     border-color: #bcbbbd3f;
-    padding: 200px 0px 0px 0px;
-    margin: 0px 95.5px 0px 95.5px;
+    padding: 170px 0px 0px 0px;
+    margin: 0px 94px 0px 94px;
 }
 .sec1div1 {
+    font-family: "groteskr", Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
     font-size: 1.06em;
     text-align: center;
 }
 .bold {
+    font-family: "groteskb", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 900;
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 1.1em;
 }
+/* Les deux boutons de la première section */
 .sec1div3 {
     display: flex;
     flex-flow: row wrap;
@@ -145,12 +161,17 @@ main {
     margin-bottom: 250px;
 }
 .sec1div3 button {
-    min-width: 240px;
-    min-height: 60px;
+    font-family: "rajdhanim", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+    width: 240px;
+    height: 60px;
+    max-width: 240px;
+    max-height: 60px;
     color: white;
-    background: linear-gradient(90deg, #eddebf71, #8900099d );
+    background: linear-gradient(90deg, #eddebf65, #89000993 );
     border: none;
 }
+/* Menu de navigation fixe de la première section */
 .sec1div4 nav ul {
     display: flex;
     flex-flow: column wrap;
@@ -158,35 +179,43 @@ main {
     gap: 20px;
 }
 .sec1div4 {
-    position: absolute;
-    top: 150px;
-    right: 132px;
+    position: fixed;
+    top: 300px;
+    right: 30px;
 }
 
 /* La deuxième section */
 .section2 {
+ 
+}
+.divsection2 {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     gap: 80px;
+    border-width: 0px 1px 0px 1px;
+    border-style: solid;
+    border-color: #bcbbbd3f;
+    padding: 40px 0px 80px 0px;
+    margin: 0px 94px 0px 94px;
 }
 .section2 article {
+    font-family: "groteskr", Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
     display: flex;
     flex-flow: column wrap;
     gap: 50px;
- /*   border-width: 0px 1px 3px 1px;
-    border-style: solid;
-    border-color: #bcbbbd3f;
-    padding: 0px 41.5px 0px 41.5px;  */
 }
 .section2 .sec2div {
     display: flex;
     flex-flow: row wrap;
-    gap: 90px;
+    gap: 70px;
     text-align: center;
     justify-content: space-around;
 }
 figcaption {
+    font-family: "rajdhanim", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
     margin-top: 20px;
 }
 /* Image au niveau du titre de la deuxième article */
@@ -208,7 +237,7 @@ figcaption {
 }
 .allies {
     position: absolute;
-    top: 1670px;
+    top: 1720px;
     left: calc(100vw - 450px);
 }
 
@@ -218,12 +247,20 @@ figcaption {
     flex-flow: column wrap;
     gap: 80px;
     align-items: center;
+    border-width: 0px 1px 0px 1px;
+    border-style: solid;
+    border-color: #bcbbbd3f;
+    margin: 0px 94px 0px 94px;
+    padding: 0px 80px 0px 80px;
+}
+.section3 .start {
+    align-self: self-start;
 }
 .sec3div {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    gap: 200px;
+    gap: 172px;
 }
 /* Le mini article */
 .section3 .sec3div article {
@@ -234,32 +271,43 @@ figcaption {
     max-height: 230px;
     border-radius: 0px 15px 15px 0px;
 }
-.section3 article .mini {
-    font-size: 0.6em;
-    padding: 15px;
-    max-width: 300px;
-    height: 230px;
+.section3 article img {
     max-height: 230px;
 }
+.section3 article .mini {
+    font-family: "groteskr", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.6em;
+    padding: 15px;
+    max-width: 340px;
+    height: 210px;
+    max-height: 210px;
+}
 .section3 article .mini h4 {
+    font-family: "rajdhanim", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    font-size: 14px;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    font-size: 0.6em;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 .section3 article .mini strong {
+    font-family: "groteskr", Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 100;
     display: inline-block;
-    font-size: 16px;
+    font-size: 0.7em;
     text-transform: capitalize;
     font-weight: normal;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .section3 article .mini em {
+    font-family: "groteskr", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
     display: inline-block;
     font-style: normal;
-    font-size: 13.5px;
+    font-size: 0.6em;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .section3 article .mini em span {
     color: yellow;
@@ -289,7 +337,6 @@ figcaption {
 
 .form-container h2 {
     font-size: 24px;
-    margin-bottom: 20px;
 }
 
 label {
@@ -324,7 +371,7 @@ label {
     resize: none;
 }
 
-b.form-container utton {
+.form-container button {
     width: 100%;
     padding: 10px;
     background: linear-gradient(to right, #8E0E00, #1F1C18);
@@ -346,3 +393,37 @@ b.form-container utton {
         padding: 15px;
     }
 }
+
+/* Les animations */
+/* Générale */
+/* Style par défaut pour l'image */
+a img {
+    transition: filter 0.3s ease-in-out; /* Transition fluide pour l'effet */
+}
+
+/* Lorsque la souris survole l'image */
+a:hover img {
+    filter: brightness(2) sepia(1) hue-rotate(60deg) saturate(10); /* Effet jaune pur et lumineux */
+}
+/* Header */
+header nav ul li a:link {
+    text-decoration: underline;
+    color: white;
+    font-family: "rajdhanim", Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+header nav ul li a:visited {
+    text-decoration: underline;
+    color: white;
+    font-family: "rajdhanim", Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: white;
+    font-family: "rajdhanim", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+
